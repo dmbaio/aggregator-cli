@@ -82,7 +82,7 @@ namespace aggregator
                     else
                     {
                         _log.LogInformation($"Returning '{execResult}' from '{rule.Name}'");
-                        return req.CreateResponse(HttpStatusCode.OK, execResult);
+                        return req.CreateResponse(HttpStatusCode.OK);
                     }
                 }
                 catch (Exception ex)
